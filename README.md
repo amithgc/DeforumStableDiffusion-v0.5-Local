@@ -7,7 +7,7 @@ This is a Local implementation of Deforum Stable Diffusion V0.5, supports json s
 Supports all Stable Diffusion Models, Including v1-5-pruned.ckpt
 
 **Example Animated Video**
-*these examples videos are generated using Deforum 0.5 and SD  Check Point 1.5 (v1-5-pruned.ckpt). Also the settings for these examples are alvailable in "examples" folder*
+*these example videos are generated using Deforum 0.5 and SD  Check Point 1.5 (v1-5-pruned.ckpt). Also the settings for these examples are available in "examples" folder*
 
 
 <p float="left">
@@ -54,14 +54,14 @@ python setup.py
 
 
 ## How to use it?
-The running command should looks like this:
+The run command should looks like this:
 ```
 python run.py --settings "./settings/animation_settings.json" --generate_video true
 ```
 
 *The output results will be available at `./output` folder.*
 
-Required variables & prompts for Deforum Stable Diffusion are set in the json file found in settings folder and I have also provided the settinngs for the example videos in *"example"* folder.
+Required variables & prompts for Deforum Stable Diffusion are set in the json file found in settings folder and I have also provided the settings for the example videos in *"example"* folder.
 
 
 
