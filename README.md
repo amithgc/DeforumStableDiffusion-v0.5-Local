@@ -6,12 +6,6 @@
 This is a Local implementation of Deforum Stable Diffusion V0.5, supports json settings file.
 Supports all Stable Diffusion Models, Including v1-5-pruned.ckpt
 
-- **[Stable Diffusion](https://github.com/CompVis/stable-diffusion) by Robin Rombach, Andreas Blattmann, Dominik Lorenz, Patrick Esser, Björn Ommer and the [Stability.ai](https://stability.ai/) Team.**
-- **[K Diffusion](https://github.com/crowsonkb/k-diffusion) by [Katherine Crowson](https://twitter.com/RiversHaveWings).** 
-- **Notebook by [deforum](https://discord.com/invite/upmXXsrwZc)**
-
-
-
 **Example Animated Video**
 *these examples videos are generated using DForum 0.5 and SD  Check Point 1.5 (v1-5-pruned.ckpt). Also the settings for these examples are alvailable in "examples" folder*
 ![example](examples/race.gif)
@@ -64,6 +58,13 @@ python run.py --settings "./settings/animation_settings.json" --generate_video t
 *The output results will be available at `./output` folder.*
 
 Required variables & prompts for Deforum Stable Diffusion are set in the json file found in settings folder and I have also provided the settinngs for the example videos in *"example"* folder.
+
+
+
+**Thanks to**
+- **[Stable Diffusion](https://github.com/CompVis/stable-diffusion) by Robin Rombach, Andreas Blattmann, Dominik Lorenz, Patrick Esser, Björn Ommer and the [Stability.ai](https://stability.ai/) Team.**
+- **[K Diffusion](https://github.com/crowsonkb/k-diffusion) by [Katherine Crowson](https://twitter.com/RiversHaveWings).** 
+- **Notebook by [deforum](https://discord.com/invite/upmXXsrwZc)**
 
 
 Enjoy!
