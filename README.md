@@ -8,11 +8,15 @@ Supports all Stable Diffusion Models, Including v1-5-pruned.ckpt
 
 **Example Animated Video**
 *these examples videos are generated using Deforum 0.5 and SD  Check Point 1.5 (v1-5-pruned.ckpt). Also the settings for these examples are alvailable in "examples" folder*
-![example](examples/race.gif)
-![example](examples/forest.gif)
+
+
+<p float="left">
+  <img src="examples/race.gif" width="400" />
+  <img src="examples/forest.gif" width="400" />
+</p>
 
 **Videos Generated using this Script**
-Watch these videos in youtube, these were generated using Deforum Stable Diffusion V0.5. I built this script primarily to generate these kind of Videos.
+Watch these videos on youtube, these were generated using Deforum Stable Diffusion V0.5. I built this script primarily to generate these kind of Videos.
 
 <p float="left">
   <a href='https://www.youtube.com/watch?v=f6asZSdUvOg'><img src="https://img.youtube.com/vi/f6asZSdUvOg/0.jpg" width="400" /></a>
