@@ -7,12 +7,12 @@ This is a Local implementation of Deforum Stable Diffusion V0.5, supports json s
 Supports all Stable Diffusion Models, Including v1-5-pruned.ckpt
 
 **Example Animated Video**
-*these examples videos are generated using DForum 0.5 and SD  Check Point 1.5 (v1-5-pruned.ckpt). Also the settings for these examples are alvailable in "examples" folder*
+*these examples videos are generated using Deforum 0.5 and SD  Check Point 1.5 (v1-5-pruned.ckpt). Also the settings for these examples are alvailable in "examples" folder*
 ![example](examples/race.gif)
 
 
 **Videos Generated using this Script**
-Watch these videos in youtube, these were generated using Dforum Stable Diffusion V0.5. I built this script primarily to generate these kind of Videos.
+Watch these videos in youtube, these were generated using Deforum Stable Diffusion V0.5. I built this script primarily to generate these kind of Videos.
 
 <p float="left">
   <a href='https://www.youtube.com/watch?v=f6asZSdUvOg'><img src="https://img.youtube.com/vi/f6asZSdUvOg/0.jpg" width="400" /></a>
