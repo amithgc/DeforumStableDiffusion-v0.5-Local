@@ -1,52 +1,46 @@
-conda create --name dsdv0.5 python=3.8.5 -y
-conda activate dsdv0.5
 
-python setup.py
+![visitors](https://visitor-badge.glitch.me/badge?page_id=deforum_sd_local_1.5_repo&left_color=green&right_color=red)
 
+# Deforum Stable Diffusion (V0.5) Local Version
 
-python run.py --enable_animation_mode --settings "./settings/animation_settings.json"
-
-
-[![Deforum Stable Diffusion](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/deforum/stable-diffusion/blob/main/Deforum_Stable_Diffusion.ipynb)
-![visitors](https://visitor-badge.glitch.me/badge?page_id=deforum_sd_local_repo)
-
-
-# Deforum Stable Diffusion Local Version
-Local version of Deforum Stable Diffusion V0.4, supports txt settings file input and animation features!
+This is a Local implementation of Deforum Stable Diffusion V0.5, supports json settings file.
+Supports all Stable Diffusion Models, Including v1-5-pruned.ckpt
 
 - **[Stable Diffusion](https://github.com/CompVis/stable-diffusion) by Robin Rombach, Andreas Blattmann, Dominik Lorenz, Patrick Esser, Björn Ommer and the [Stability.ai](https://stability.ai/) Team.**
 - **[K Diffusion](https://github.com/crowsonkb/k-diffusion) by [Katherine Crowson](https://twitter.com/RiversHaveWings).** 
 - **Notebook by [deforum](https://discord.com/invite/upmXXsrwZc)**
 
-- **Local Version by [DGSpitzer](https://www.youtube.com/channel/UCzzsYBF4qwtMwJaPJZ5SuPg) [大谷的游戏创作小屋](https://space.bilibili.com/176003)**
-- **Special Thanks to [VIVY Has A Dream](https://github.com/vivyhasadream) for all the help!**
 
 
-![example](examples/example1.gif)
-![example](examples/example2.gif)
-![example](examples/example3.gif)
-
-**👇Animated Video👇**
-
-[![example video](https://img.youtube.com/vi/DCJm61yQ4_g/0.jpg)](https://www.youtube.com/watch?v=DCJm61yQ4_g)
+**Example Animated Video**
+*these examples videos are generated using DForum 0.5 and SD  Check Point 1.5 (v1-5-pruned.ckpt). Also the settings for these examples are alvailable in "examples" folder*
+![example](examples/race.gif)
 
 
-Made this quick local Windows version mostly based on the Colab code by deforum, which supports very cool turbo mode animation output for Stable Diffusion!
+**Videos Generated using this Script**
+Watch these videos in youtube, these were generated using Dforum Stable Diffusion V0.5. I built this script primarily to generate these kind of Videos.
 
-As an artist and Unity game designer, I may not very familiar with Python code, so let me know whether there is any improvement for this project!
+<p float="left">
+  <a href='https://www.youtube.com/watch?v=f6asZSdUvOg'><img src="https://img.youtube.com/vi/f6asZSdUvOg/0.jpg" width="400" /></a>
+  <a href='https://www.youtube.com/watch?v=YNYMaLc8HBY'><img src="https://img.youtube.com/vi/YNYMaLc8HBY/0.jpg" width="400" /></a>
+  <a href='https://www.youtube.com/watch?v=qkFsSCP5cXg'><img src="https://img.youtube.com/vi/qkFsSCP5cXg/0.jpg" width="400" /></a>
+  <a href='https://www.youtube.com/watch?v=CfqsKcbdCFU'><img src="https://img.youtube.com/vi/CfqsKcbdCFU/0.jpg" width="400" /></a>
+</p>
 
-It's tested working on Windows 10 with RTX 2080 SUPER and RTX 3090 GPU (it runs somehow much faster on my local 3090 then Colab..), **I haven't tested it on Mac though.**
+This script is based on the Colab code by deforum (v0.5). I have tested it on ***Ubuntu 22.04*** + ***Nvidia RTX 3090 ti***
+
+
 
 ## Installation
 
-You can use an [anaconda](https://conda.io/) environment to host this local project:
+You can use an [anaconda](https://conda.io/) environment to run this on your local machine:
 
 ```
-conda create --name dsd python=3.8.5 -y
-conda activate dsd
+conda create --name dsdv0.5 python=3.8.5 -y
+conda activate dsdv0.5
 ```
 
-And then cd to the cloned folder, run the setup code, and wait for ≈ 5min until it's finished
+And then cd to the cloned folder, run the setup code.
 
 ```
 python setup.py
@@ -54,38 +48,22 @@ python setup.py
 
 ## Manually download 3 Model Files
 
-**You need to get the `sd-v1-4.ckpt` file and put it on the `./models` folder first to use this. It can be downloaded from [HuggingFace](https://huggingface.co/CompVis/stable-diffusion).**
+*Most of these files will be automatically downloaded during your first run. If not, you can download them manually.*
 
-**Additionally, you should put `dpt_large-midas-2f21e586.pt` on the `./models` folder as well, [the download link is here](https://github.com/intel-isl/DPT/releases/download/1_0/dpt_large-midas-2f21e586.pt)**
-
-**There should be another extra file `AdaBins_nyu.pt` which should be downloaded into `./pretrained` folder, [the download link is here](https://cloudflare-ipfs.com/ipfs/Qmd2mMnDLWePKmgfS8m6ntAg4nhV5VkUyAydYBp8cWWeB7/AdaBins_nyu.pt)**
+* You need to get the `v1-5-pruned.ckpt` file and put it on the `./models` folder. It can be downloaded from [HuggingFace](https://huggingface.co/runwayml/stable-diffusion-v1-5/).
+* Additionally, you should put `dpt_large-midas-2f21e586.pt` on the `./models` folder as well, [the download link is here](https://github.com/intel-isl/DPT/releases/download/1_0/dpt_large-midas-2f21e586.pt)
+* There should be another extra file `AdaBins_nyu.pt` which should be downloaded into `./pretrained` folder, [the download link is here](https://cloudflare-ipfs.com/ipfs/Qmd2mMnDLWePKmgfS8m6ntAg4nhV5VkUyAydYBp8cWWeB7/AdaBins_nyu.pt)
 
 
 ## How to use it?
 The running command should looks like this:
 ```
-python run.py --enable_animation_mode --settings "./runSettings_Template.txt"
+python run.py --settings "./settings/animation_settings.json" --generate_video true
 ```
 
-After installation you can try out following examples to see if the code is working
-- 1. For generate still images:
-```
-python run.py --settings "./examples/runSettings_StillImages.txt"
-```
-- 2. For animation feature, you need to add `--enable_animation_mode` to enable animation settings in text file:
-```
-python run.py --enable_animation_mode --settings "./examples/runSettings_Animation.txt"
-```
-- 3. For mask feature:
-```
-python run.py --settings "./examples/runSettings_Mask.txt"
-```
-![example](examples/MaskExampleDisplay.png)
-[Original Painting on Artstation](https://www.artstation.com/artwork/yVyG3)
+*The output results will be available at `./output` folder.*
 
-**The output results will be available at `./output` folder.**
-
-All the needed variables & prompts for Deforum Stable Diffusion are set in the txt file (You can refer to the [Colab](https://colab.research.google.com/github/deforum/stable-diffusion/blob/main/Deforum_Stable_Diffusion.ipynb) page for definition of all the variables), you can have many of settings files for different tasks. There is a template file called `runSettings_Template.txt`. You can create your own txt settings file as well.
+Required variables & prompts for Deforum Stable Diffusion are set in the json file found in settings folder and I have also provided the settinngs for the example videos in *"example"* folder.
 
 
-That's it! 
+Enjoy!
